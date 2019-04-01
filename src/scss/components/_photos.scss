@@ -1,0 +1,61 @@
+
+.drinks__photo{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.3);
+    transform-origin: 50% 50%;
+}
+
+
+.drinks__card{
+    position: relative;
+    width: $photo-width;
+    height: $photo-height;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 3vh 0;
+    overflow: hidden;
+    transition: .1s;
+    @include respond-to(medium){
+        margin-bottom: 1vh;
+    }
+    @include respond-to(small){
+        width: $photo-mobile-width;
+    }
+ 
+    &:hover{
+        outline: 4px solid $chardonnay;
+    }
+
+}
+
+.drinks__title{
+    @include position(50%,50%);
+    color: white;
+    font-family: $open-sans;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    cursor: context-menu;
+    @include respond-to(medium){
+        font-size: 1.2rem;
+    }
+
+}
+
+.drinks__bijou{
+    @include zoom-photo(scale(1.1));
+}
+
+.drinks__negroni{
+    @include zoom-photo(scale(1.9),55%,12%);
+}
+.drinks__mojito{
+    @include zoom-photo(scale(1.9),60%,8%)
+}
+.drinks__rattlesnake{
+    @include zoom-photo(scale(1.4),50%,8%)
+}
+.drinks__eggnogg{
+    @include zoom-photo(scale(1.2),13%,10%)
+}

@@ -1,0 +1,17 @@
+.page-wraper{
+    @include flexbox(space-between,center);
+    flex-direction: column;
+    width: 75vw;
+    height: 100vh;
+    margin: 0 auto;
+    @include respond-to(large){
+        width: 90vw;
+    }
+    @include respond-to(medium){
+        width: 75vw;
+    }
+    @include respond-to(small){
+        width: 90vw;
+    }
+   
+}

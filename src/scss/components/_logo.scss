@@ -1,0 +1,21 @@
+.main__logo{
+    @include position(0,7%);
+    width: 9%;
+    padding: 3px 0;
+    border: 2px solid black;
+    font-family: $reem-kufi;
+    font-size: 1.3rem;
+    line-height: 4.5vh;
+    text-align: center;
+    @include respond-to(medium){
+        font-size: 1rem;
+        padding: 1px 0;
+    }
+    @include respond-to(small){
+        @include position(0,25%);
+        width: 28%;
+        font-size: 1.5rem; 
+    }
+
+}
+

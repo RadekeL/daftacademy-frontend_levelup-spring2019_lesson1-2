@@ -1,0 +1,6 @@
+.footer{
+    @include flexbox(center,space-between);
+    height: 5vh;
+}
+
+

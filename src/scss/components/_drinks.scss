@@ -1,0 +1,24 @@
+.drinks{
+    
+    @include flexbox();
+    width: $container-size;
+    flex-basis: $container-size;
+    padding-left: 5px;
+    overflow-y: scroll;
+    @include respond-to(small){
+        position: relative;
+    }
+}
+
+.drinks__window{
+    @include flexbox(space-around,space-between);
+    flex-wrap: wrap;
+    width: 95%;
+    @include respond-to(small){
+        @include position(0,50%);
+        transform: translate(-50%,0);
+        @include flexbox(center,space-around);
+        flex-direction: column;
+    }
+
+}

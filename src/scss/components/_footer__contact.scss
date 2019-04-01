@@ -1,0 +1,25 @@
+.footer__contact{
+    @include flexbox(center,space-between);
+    flex-basis: 14%;
+}
+
+.footer__social{
+    @include flexbox(center,space-between);
+        flex-basis: 13%;
+    @include respond-to(small){
+        flex-basis: 23%;
+    }
+}
+.footer__text{
+    color: $Nebula;
+    @include respond-to(medium){
+        display: none;
+    }
+}
+
+.footer__mail{
+    color: $slate-gray;
+}
+.fab{
+    color: $Nebula;
+}

@@ -1,0 +1,76 @@
+.main__icon{
+    display: none;
+    @include respond-to(small){
+        display: block;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+
+.main__nav{
+    width: $container-size;
+    flex-basis: 6%;
+    transition: 1s;
+    @include respond-to(medium){
+        width: $container-size-mobile;
+    }
+    @include respond-to(small){
+        display: none;
+    }
+    &--mobile{
+        @include respond-to(small){
+            display: block;
+        }
+    }
+
+}
+
+.main__list{
+    @include flexbox(center,space-between);
+    @include respond-to(small){
+        flex-direction: column;
+    }
+}
+
+.main__link{
+    font-size: .9rem;
+    font-family: $reem-kufi;
+    color: $Nebula;
+    text-decoration: none;
+    transition: .6s;
+
+    @include respond-to(medium){
+        font-size: .8rem;
+    }
+    @include respond-to(small){
+        font-size: 1.1rem;
+    }
+    
+    &--active{
+        position: relative;
+        color: $slate-gray;
+        transition: .3s;
+    }
+
+    &--active::after{
+        content: '';
+        height: 1px;
+        width: 80%;
+        background: black;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @include respond-to(small){
+            height: 0;
+            width: 0;
+        }
+    }
+
+    &:hover{
+        color: $slate-gray; 
+    }
+}
+
+
+
