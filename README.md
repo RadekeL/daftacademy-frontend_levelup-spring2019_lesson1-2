@@ -1,4 +1,4 @@
-# daftacademy-frontend_levelup-spring2019_lesson1-2
+# Homework 1 - 2
 
 * # Konfiguracja projektu frontendowego
 
