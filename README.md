@@ -19,4 +19,4 @@ Zaimplementować przedstawiony layout (HTML + SASS)
 Zastosować metodologię BEM
 RWD nie jest wymagane, ale będzie dodatkowo punktowane
 
-Link do proejktu: [Drink-Page](https://radekel.github.io/daftacademy-frontend_levelup-spring2019_lesson1-2/)
+Link do projektu: [Drink-Page](https://radekel.github.io/daftacademy-frontend_levelup-spring2019_lesson1-2/)
